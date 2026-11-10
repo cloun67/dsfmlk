@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "triggerbot",
+  "version": "${version}",
+  "name": "TriggerBot",
+  "description": "Auto-attack when your crosshair is on a target. Configurable via Mod Menu.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.triggerbot.TriggerBotMod"],
+    "modmenu": ["com.example.triggerbot.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=19"
+  },
+  "suggests": { "modmenu": "*" }
+}
